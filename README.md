@@ -33,9 +33,11 @@ Deploy the updated code to your balena device(s) [by issuing](https://docs.balen
 
 ## How it works
 
-Your model (impulse) is automatically downloaded and run by the Edge Impulse container. It exposes an API which the "cam" service uses to get repeated inferences from the images captured by the webcam. Note the "cam" service has no Edge Impulse-specific code. It uses OpenCV and the Requests module to obtain inferences from the "ei" container.
+Your model (impulse) is automatically downloaded and run by the Edge Impulse container. It exposes an API which another service can use. Check the [docs here](https://docs.edgeimpulse.com/docs/run-inference/docker) of the API exposed.
 
 The Edge Impulse model UI is available on port 80 of your device.
+
+![Edge Impulse UI running on Docker balena](https://github.com/mpous/ei-balena/assets/173156/7951db1b-17e4-4151-af51-bbc78f8c0f32)
 
 
 ## Troubleshooting
