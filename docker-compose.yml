@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  edge-impulse:
+    build: ./ei
+    privileged: true
+    ports:
+      - "80:80"
+      
+
