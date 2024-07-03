@@ -24,11 +24,15 @@ Clone or create an impulse in Edge Impulse that uses image recognition.
 
 On the Edge Impulse `Deployment` screen, enter `Docker` for the "Search deployment options." You'll see instructions for how to run your model as a Docker container. Note the "Container" and "Arguments" which you'll need to add to the Dockerfile in the ei folder of this cloned repo.
 
+![Edge Impulse Deployment Docker](https://github.com/mpous/ei-balena/assets/173156/38783f79-ad9c-4296-b355-db3ff31037c5)
+
 Copy the "Container" value to replace the partial example value after the `FROM` in line one of the Dockerfile in the `eim` folder.
 
 Copy the API key (just the part that begins with `ei_`) to the line that starts `ENV API_KEY=` and also to the second string in the `CMD` command in the last line of the Dockerfile.
 
 Deploy the updated code to your balena device(s) [by issuing](https://docs.balena.io/learn/deploy/deployment/) `balena push` in the balena CLI. 
+
+![Captura de pantalla 2024-07-03 a les 12 10 02](https://github.com/mpous/ei-balena/assets/173156/f5148e97-8245-4ba4-acb3-8b6ae3726966)
 
 
 ## How it works
